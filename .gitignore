@@ -1,0 +1,223 @@
+# Rust Build Artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo.lock - uncomment if building a library
+# Cargo.lock
+
+# Cargo output files
+Cargo.lock
+**/*.rs.bk
+*.orig
+
+# Build directories
+/target/
+/release/
+/debug/
+
+# Incremental compilation
+**/*.rmeta
+
+# Profiling data
+flamegraph.svg
+perf.data
+perf.data.old
+*.profraw
+*.profdata
+
+# Testing artifacts
+*.gcda
+*.gcno
+*.gcov
+/coverage/
+/htmlcov/
+.coverage
+.tox/
+
+# Benchmark results
+/benches/*.txt
+/benches/results/
+*.criterion
+
+# Documentation builds
+/target/doc/
+/docs/_build/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+.project
+.classpath
+.settings/
+.history/
+*.code-workspace
+
+# Rust Analyzer
+rust-project.json
+
+# Cryptographic artifacts
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.crt
+*.csr
+*.cer
+*.der
+*.pub
+*.priv
+*.secret
+secrets/
+keys/
+*.enc
+*.encrypted
+
+# Random seed files
+*.seed
+*.rng
+
+# Test vectors (may want to keep some in git)
+# /test-vectors/
+
+# CI/CD artifacts
+.github/workflows/*.log
+/.gitlab-ci-local/
+/ci/cache/
+/ci/logs/
+*.log
+
+# Continuous Integration
+/.travis.yml.swp
+/.circleci/*.log
+
+# Code coverage
+lcov.info
+*.lcov
+cobertura.xml
+coverage.xml
+
+# Fuzzing artifacts
+/fuzz/corpus/
+/fuzz/artifacts/
+/fuzz/coverage/
+hfuzz_target/
+hfuzz_workspace/
+*.fuzz
+
+# Memory safety checkers
+valgrind-*.log
+valgrind.log
+*.dSYM/
+*.san
+
+# LLVM/Clang tools
+compile_commands.json
+.clangd/
+.cache/
+
+# Dependency directories
+vendor/
+.cargo/
+
+# Binary artifacts
+*.exe
+*.dll
+*.so
+*.so.*
+*.dylib
+*.a
+*.lib
+*.out
+*.app
+
+# Package files
+*.crate
+*.tar.gz
+*.zip
+
+# Security scanning
+/.snyk
+/snyk-report.json
+/audit-report.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+/tmp/
+/temp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100
+.Trashes
+
+# Hardware security module artifacts
+/hsm/
+*.hsm
+
+# Licensing and activation
+license.dat
+activation.key
+*.lic
+
+# Assembly and disassembly output
+*.s
+*.asm
+
+# Optimization profiles
+*.pgo
+*.pgd
+*.pgc
+
+# Custom build scripts output
+/build/output/
+/scripts/output/
+
+# Local configuration
+config.local.toml
+.local/
+
+# Jupyter Notebooks (if used for research)
+.ipynb_checkpoints/
+*.ipynb
+
+# Research and analysis
+/analysis/
+/research/scratch/
+*.analysis
+
+# Docker
+.dockerignore.local
+docker-compose.override.yml
+
+# Nix
+result
+result-*
+
+# Node modules (if any JS tooling)
+node_modules/
+package-lock.json
+yarn.lock
